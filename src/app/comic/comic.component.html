@@ -1,9 +1,9 @@
 <div class="buscadorCont">
-  <input type="text" placeholder="Buscar...">
+  <input type="text" placeholder="Buscar..." [(ngModel)]="filterText">
 </div>
 <div class="comicCont">
   <ul>
-    <li *ngFor="let comic of _comics; let i=index" >
+    <li *ngFor="let comic of _comics | filter:filterText; let i=index" >
       <div class="infoCont">
         <div class="titleCont">{{comic.title}}</div>
         <img src="{{comic.img}}">
@@ -16,13 +16,5 @@
       </div>
       
     </li>
-    
-    <!--<li>
-        <div class="infoCont">
-          <div class="titleCont">Título</div>
-          <div class="dateCont">Fecha</div>
-          <div class="likesCont">ESPACIO DE LIKES</div>
-        </div>
-      </li>-->
   </ul>
 </div>
