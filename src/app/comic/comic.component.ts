@@ -16,6 +16,16 @@ export class ComicComponent implements OnInit {
     private _peticionService: PeticionService
   ) { }
 
+  public likes(index,ok){
+    if(ok){
+      this._comics[index].likes+=1;
+      console.log(this._comics[index]);
+    }else if(this._comics[index].likes!=0){
+      this._comics[index].likes-=1;
+    }
+
+  }
+
   ngOnInit() {
     this._peticionService.getInfo().subscribe(
       result =>{

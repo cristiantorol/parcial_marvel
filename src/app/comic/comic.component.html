@@ -6,10 +6,15 @@
     <li *ngFor="let comic of _comics; let i=index" >
       <div class="infoCont">
         <div class="titleCont">{{comic.title}}</div>
+        <img src="{{comic.img}}">
         <div class="dateCont">{{comic.date}}</div>
-        <div class="likesCont">{{comic.likes}}</div>
+        <div class="likesCont">
+          <span>{{comic.likes}}</span>
+          <img id="likebutton" (click)="likes(i,true)"  src="../../assets/like.png">
+          <img id="dislikebutton" (click)="likes(i,false)" src="../../assets/dislike.png">
+        </div>
       </div>
-      <img src="{{comic.img}}">
+      
     </li>
     
     <!--<li>
