@@ -3,90 +3,21 @@
 </div>
 <div class="comicCont">
   <ul>
-    <li>
+    <li *ngFor="let comic of _comics; let i=index" >
       <div class="infoCont">
-        <div class="titleCont">Título</div>
-        <div class="dateCont">Fecha</div>
-        <div class="likesCont">ESPACIO DE LIKES</div>
+        <div class="titleCont">{{comic.title}}</div>
+        <div class="dateCont">{{comic.date}}</div>
+        <div class="likesCont">{{comic.likes}}</div>
       </div>
-    </li>
-    <li>
-      <div class="infoCont">
-        <div class="titleCont">Título</div>
-        <div class="dateCont">Fecha</div>
-        <div class="likesCont">ESPACIO DE LIKES</div>
-      </div>
-    </li>
-    <li>
-      <div class="infoCont">
-        <div class="titleCont">Título</div>
-        <div class="dateCont">Fecha</div>
-        <div class="likesCont">ESPACIO DE LIKES</div>
-      </div>
-    </li>
-    <li>
-      <div class="infoCont">
-        <div class="titleCont">Título</div>
-        <div class="dateCont">Fecha</div>
-        <div class="likesCont">ESPACIO DE LIKES</div>
-      </div>
-    </li>
-    <li>
-      <div class="infoCont">
-        <div class="titleCont">Título</div>
-        <div class="dateCont">Fecha</div>
-        <div class="likesCont">ESPACIO DE LIKES</div>
-      </div>
-    </li>
-    <li>
-      <div class="infoCont">
-        <div class="titleCont">Título</div>
-        <div class="dateCont">Fecha</div>
-        <div class="likesCont">ESPACIO DE LIKES</div>
-      </div>
-    </li>
-    <li>
-      <div class="infoCont">
-        <div class="titleCont">Título</div>
-        <div class="dateCont">Fecha</div>
-        <div class="likesCont">ESPACIO DE LIKES</div>
-      </div>
-    </li>
-    <li>
-      <div class="infoCont">
-        <div class="titleCont">Título</div>
-        <div class="dateCont">Fecha</div>
-        <div class="likesCont">ESPACIO DE LIKES</div>
-      </div>
-    </li>
-    <li>
-      <div class="infoCont">
-        <div class="titleCont">Título</div>
-        <div class="dateCont">Fecha</div>
-        <div class="likesCont">ESPACIO DE LIKES</div>
-      </div>
-    </li>
-    <li>
-      <div class="infoCont">
-        <div class="titleCont">Título</div>
-        <div class="dateCont">Fecha</div>
-        <div class="likesCont">ESPACIO DE LIKES</div>
-      </div>
-    </li>
-    <li>
-      <div class="infoCont">
-        <div class="titleCont">Título</div>
-        <div class="dateCont">Fecha</div>
-        <div class="likesCont">ESPACIO DE LIKES</div>
-      </div>
-    </li>
-    <li>
-      <div class="infoCont">
-        <div class="titleCont">Título</div>
-        <div class="dateCont">Fecha</div>
-        <div class="likesCont">ESPACIO DE LIKES</div>
-      </div>
+      <img src="{{comic.img}}">
     </li>
     
+    <!--<li>
+        <div class="infoCont">
+          <div class="titleCont">Título</div>
+          <div class="dateCont">Fecha</div>
+          <div class="likesCont">ESPACIO DE LIKES</div>
+        </div>
+      </li>-->
   </ul>
 </div>
