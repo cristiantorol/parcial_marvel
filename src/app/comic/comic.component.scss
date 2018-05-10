@@ -1,0 +1,56 @@
+.buscadorCont{
+    display: inline-block;
+    width: 100%;
+    background: black;
+    height: 10%;
+    position: relative;
+    input{
+        margin: 3% auto;
+        display: block;
+        position: relative;
+        width: 86%;
+        border-radius: 18px;
+        height: 35%;
+    }
+}
+
+.comicCont{
+    display:inline-block;
+    height: 100%;
+    width: 100%;
+    background-color:lightseagreen;
+    ul{
+        list-style: none;
+        margin:0 auto;
+        li{
+            display: inline-block;
+            border: 1px solid black;
+            height: 141px;
+            width: 141px;
+            margin: 4px;
+            margin-top: 10px;
+        }
+    }
+}
+
+.infoCont{
+    display:block;
+    background-color: fuchsia;
+    width: 100%;
+    height: 100%;
+}
+
+.dateCont{
+    background-color: yellow;
+    width: 50%;
+    margin-top: 74%;
+}
+.titleCont{
+    background-color: green;
+}
+.likesCont{
+    background-color: red;
+    width: 50%;
+    margin-left: 50%;
+    margin-top: -54px;
+}
